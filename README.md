@@ -1,9 +1,9 @@
 # addHandler
 
-function addHandler(element, event, func){
+function addHandler(el, ev, func){
 			try{
-				element.addEventListener(event, func, false);
+				el.addEventListener(ev, func, false);
 			}catch(e){
-				element.attachEvent("on" + event, func);
+				el.attachEvent("on" + ev, func);
 			}
 		}
